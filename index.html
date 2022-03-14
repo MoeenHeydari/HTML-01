@@ -1,85 +1,80 @@
 <html>       
-    <head> <title>Why Denmark?</title>
-        <style>
-            body{
-                background-color: burlywood;
-                margin : 0;
-            }
-            #p1{
-                width : 95%;
-                height : auto;
-                padding: 10px;
-                font-size: 24pt;
-                background-color: burlywood;
-                text-justify: auto;
-            }
-            #header{
-                width : 100%;
-                height : 150px;
-                background-color: bisque;
-                font-size: 40pt;
-                text-align: center;
-                text-shadow: 2px 2px 10px black;
-                padding-top: 50px;
-            }
-            #footer{
-                width : 100%;
-                height :100px;
-                background-color: silver;
-                text-align:center;
-                font-size: 20pt;
-            }
-            #list{
-                background-color: bisque;
-                border-color: black;
-                border-width: 2px;
-                border-style: dashed;
-                font-size: 24pt;
-                width : 600px;
-                margin-left: 100px;
-                padding: 20px;
-            }
-        </style>
-
+    <head> 
+        <title>Why Denmark?</title>
+        <link type="text/css" rel="stylesheet" href="../HTML-01/documents/theme.css"/>  
     </head>
 
     <body>
-        <div id="header"> 12 Reasons To Pack Your Bags And Move To Denmark </div>
 
-        <img src='denmark.jpg' title='Denmark' width='100%'/>
-        <h1 style="font-size:40pt">Where is Denmark? </h1>
-        <p id="p1">
+        <header style="background-color: blanchedalmond;">
+            <h1> 12 Reasons To Pack Your Bags And Move To Denmark</h1>
+            <br>
+            <img src='../HTML-01/images/denmark.jpg' title='Denmark' width="100%"/>
+        </header>
+
+        <aside>
+            <ul class="aside">
+                <th>Top-Rated Tourist Attractions in Denmark</th><br><br>
+                <li>Tivoli Gardens, Copenhagen</li>
+                <li>Nyhavn, Copenhagen</li>
+                <li>National Museum of Denmark (Nationalmuseet), Copenhagen</li>
+                <li>The National Gallery of Denmark (Statens Museum for Kunst), Copenhagen</li>
+                <li>Christiansborg Palace, Copenhagen</li>
+                <li>Frederiksborg Palace and the Museum of National History, Copenhagen</li>
+                <li>LEGO House, Billund</li>
+                <li>Oresund Bridge, Copenhagen</li>
+                <li>Lyngby Open-Air Museum (Frilandsmuseet), Copenhagen</li>
+                <li>Kronborg Slot, Helsingør</li>
+                <li>Egeskov Castle, Kvarnstrup</li>
+                <li>Hans Christian Andersen Museum, Odense</li>
+                <li>Viking Ship Museum (Vikingeskibsmuseet), Roskilde</li>
+                <li>Den Gamle By, Aarhus</li>
+                <li>The Round Tower (Rundetårn), Copenhagen</li>
+                <li>Amalienborg Palace, Copenhagen</li>
+                <li>The Funen Village (Den Fynske Landsby)</li>
+            </ul>
+        </aside>
+       
+        <main>
+            <h2 style="font-size:40pt">Where is Denmark? </h2>
+            <p id="p1">
             Denmark is a Scandinavian country comprising the Jutland Peninsula and numerous islands.
             It's linked to nearby Sweden via the Öresund bridge. Copenhagen, its capital, is home to
             royal palaces and colorful Nyhavn harbor, plus the Tivoli amusement park and the iconic
             <span style="color: brown">“Little Mermaid” </span>statue. Odense is writer Hans Christian 
             Andersen’s hometown, with a medieval core of cobbled streets and half-timbered houses. 
-        </p>
+            </p>
+    
+            <div id="list">
+                <h3>The Most Popular Reasons</h3>
+                <ol>
+                    <li>The Danish lifestyle</li>
+                    <li>The Danish Pastries</li>
+                    <li>The location</li>
+                    <li>The size</li>
+                    <li>The living standards</li>
+                    <li>The healthcare system</li>
+                    <li>The public transportation</li>
+                    <li>The alcohol</li>
+                    <li>The work-life balance</li>
+                    <li>The Innovation</li>
+                    <li>The equality</li>
+                    <li>The processive</li>
+                </ol>
+                
+            </div>
+            <img  id="lifestyle" src="../HTML-01/images/lifestyle.png">
+            <h4> for more information <a href="https://www.expatolife.com/reasons-to-live-in-denmark/" target="_blank">click here</a></h4>
+        </main>
+       
+        <footer>
+            <div class="footer">
+                <a href="../HTML-01/documents/contact.html" target="_blank">Contact</a> |
+                <a href="#" >About</a> |
+                <a href="#" >Send feedback</a><br><br>
+                <kbd style="font-size:12pt">copyright 2022</kbd>
+            </div>
+        </footer>
 
-        <div id="list">
-            <h2>The Most Popular Reasons</h2>
-             <ol>
-                <li>The Danish lifestyle</li>
-                <li>The Danish Pastries</li>
-                <li>The location</li>
-                <li>The size</li>
-                <li>The living standards</li>
-                <li>The healthcare system</li>
-                <li>The public transportation</li>
-                <li>The alcohol</li>
-                <li>The work-life balance</li>
-                <li>The Innovation</li>
-                <li>The equality</li>
-                <li>The processive</li>
-             </ol>
-        </div>
-        
-        
-        <h3> for more information <a href="https://www.expatolife.com/reasons-to-live-in-denmark/" target="_blank">click here</a></h3>
-        <div id="footer">
-            <a href="contact.html" target="_blank">Contact</a> |
-            <a href="#" >About</a> |
-            <a href="#" >Send feedback</a>
-        </div>
     </body>
 </html>
