@@ -2,27 +2,52 @@
     <head>
         <script src="https://kit.fontawesome.com/d854dcc465.js" crossorigin="anonymous"></script>
         <link type="text/css" rel="stylesheet" href="theme.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trade Winds|Shrikhand|Gluten&effect=fire|neon|emboss"/>
         <title>Contact us</title>
     </head>
     
     <body>
-        <h2 style="text-align: center;"><br> you may connect us in several ways</h2>
-        <div id="options">
-            <br>
-            <br>
-            <a href="#">Facebook</a> <i class="fa fa-facebook"></i> <br>
-            <a href="#">Twitter</a> <i class="fa fa-twitter"></i> <br>
-            <a href="#">Telegram</a> <i class="fa fa-telegram"></i> <br>
-            <a href="#">Whatsapp</a> <i class="fa fa-whatsapp"></i> <br>
-            <a href="#">Instagram</a> <i class="fa fa-instagram"></i>
-        </div>      
         
-        <div class="footer">
-            <a href=../index.html>Home Page</a> |
-            <a href="contact.html" target="_blank">Contact</a> |
-            <a href="#" >About</a> |
-            <a href="#" >Send feedback</a><br><br>
-            <kbd style="font-size:12pt">copyright 2022</kbd>
-        </div>
+        <header style="text-align:center">
+            <br>
+            <h2 style="font-family: Gluten;">Contact Us</h2>
+            <hr>
+        </header>
+
+        <main>      
+            <div class="contact">
+                <b style="font-family: Gluten;">You can leave a message here for us:</b>
+                <br>
+                <br>
+                <form>
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br> 
+                    <label for="subject">Subject</label><br>
+                    <textarea id="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+                    <input type="submit" value="Submit" style="margin-left:350">
+                </form>
+            </div> 
+            
+            <br>
+            <b style="font-family: Gluten; padding-left:80px;" >Follow us on our social networks</b>
+            <div id="options" >
+                <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a> |
+                <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a> |
+                <a href="#" title="Telegram"><i class="fa fa-telegram"></i></a> |
+                <a href="#" title="WhatsApp"><i class="fa fa-whatsapp"></i></a> |
+                <a href="#" title="Instagram"><i class="fa fa-instagram"></i></a> |
+                <a href="#" title="LinkedIn"><i class="fa fa-LinkedIn"></i></a>
+            </div>
+        </main>
+
+        <footer class="footer" style="margin-top: 350;">
+                <a href="../index.html" target="_blank">Home Page</a> |
+                <a href="contact.html">Contact</a> |
+                <a href="#" >About</a> |
+                <a href="#" >Send feedback</a><br><br>
+                <kbd style="font-size:12pt">copyright 2022</kbd>
+        </footer>
     </body>
 </html>
