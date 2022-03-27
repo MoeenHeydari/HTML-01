@@ -1,8 +1,9 @@
-body{
+body {
     margin : 0;
     background: linear-gradient(to bottom left, #ffbb33 0%, #ff99cc 100%);
 }
-h1{
+
+h1 {
     width : 100%;
     height : 50px;
     font-size: 30pt;
@@ -10,19 +11,22 @@ h1{
     text-shadow:2px 2px 10px black;
     padding-top: 30px;
 }
-header{
+
+header {
     background: linear-gradient(to bottom left, #ffbb33 0%, #ec5b5b 100%);
-    padding-right: 10px;
 }
-i{
+
+i {
     font-size: 30;
 }
-li:hover{
+
+li:hover {
     background-color: silver;
     text-decoration: underline;
     cursor: pointer;
 }
-.aside{
+
+.aside {
     font-family: 'Shrikhand';
     width : 250px;
     border: 2px solid;
@@ -34,7 +38,8 @@ li:hover{
     list-style-position:outside;
     overflow-y: scroll;
 }
-.footer{
+
+.footer {
     width : 100%;
     height :20%;
     background-color: silver;
@@ -42,7 +47,8 @@ li:hover{
     font-size: 20pt;
     color: white;
 }
-#img2{
+
+#img2 {
     width: 450px;
     height: 600;
     position: relative;
@@ -50,7 +56,8 @@ li:hover{
     top:0;
     margin-left: 50;
 }
-#list{
+
+#theMostPopularReasonslist {
     background-color: bisque;
     border: 2px dashed black;
     font-size: 24pt;
@@ -60,11 +67,12 @@ li:hover{
     padding-left: 20;
     float: left;
 }
-#login{
+
+#login {
     font-family: "Gluten";
     width: 250px;
     height: 500px;
-    line-height: 50px;
+    line-height: 40px;
     border: solid;
     border-width: 2px;
     border-radius: 15px;
@@ -75,16 +83,16 @@ li:hover{
     text-align: center;
     font-size: 25px;
 }
-#options{
+
+.icon {
     text-align: center;
     text-shadow: 1px 1px 2px black;
-    font-size: large;
     margin-right:300px;
     margin-top: 100px;
     font-size: 60px;
-    text-decoration-style: none;
 }
-#p1{
+
+#p1 {
     width : 73%;
     height : auto;
     margin-left: 50px;
@@ -92,31 +100,27 @@ li:hover{
     text-justify: auto;
     text-align: justify;
 }
-input:hover{
+
+input:hover {
     background-color: silver;   
 }
-input:focus{
+
+input:focus {
     background-color: rgb(220, 255, 60);
 }
-#Forgot{
-    font-size: small;
-    font-weight: bold; 
-    text-decoration: none; 
-    margin-left: 65px;
-}
-a[target]{
+
+a[target] {
     font-weight: bold;
 }
-img[title~="Denmark"]{
-    border: 4px solid black;
-}
-input{
+
+input {
     text-align: center;
     block-size: 40px;
     border-radius: 15px;
     font-weight: bolder;
 }
-input[type=text], textarea{
+
+input[type=text], textarea {
     width: 60%;
     padding: 12px;
     border: 1px solid rgb(204, 204, 204);
@@ -124,16 +128,19 @@ input[type=text], textarea{
     margin-bottom: 16px;
     resize: both;
 }
-input[type=submit]{
+
+input[type=submit] {
     background-color: rgb(0, 170, 10);
     color: white;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
 }
-input[type=submit]:hover{
+
+input[type=submit]:hover {
     background-color: rgb(69, 160, 73);
 }
+
 .contact {
     border-radius: 5px;    
     padding: 10px;
@@ -141,4 +148,34 @@ input[type=submit]:hover{
     width: 50%;
     margin-top: 6px;
     padding: 20px;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+nav {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav {
+    float: left;
+}
+
+.nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #111;
+    width: 100px;
 }
