@@ -1,0 +1,70 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+i {
+    font-size: 30;
+}
+
+#login {
+    font-family: "Gluten";
+    width: 250px;
+    height: 500px;
+    line-height: 40px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 15px;
+    background-color:bisque;  
+    text-align: center;
+    font-size: 25px;
+}
+
+input:hover {
+    background-color: silver;   
+}
+
+input:focus {
+    background-color: rgb(220, 255, 60);
+}
+
+input {
+    text-align: center;
+    block-size: 40px;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+input[type=submit] {
+    background-color: rgb(0, 170, 10);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(69, 160, 73);
+}
+
+input:invalid {
+    border: 2px solid red;
+}

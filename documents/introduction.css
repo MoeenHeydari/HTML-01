@@ -1,0 +1,160 @@
+body {
+    margin : 0;
+    background: linear-gradient(to bottom left, #ffbb33 0%, #ff99cc 100%);
+}
+
+h1 {
+    width : 100%;
+    height : 50px;
+    font-size: 30pt;
+    text-align: center;
+    text-shadow:2px 2px 10px black;
+    padding-top: 30px;
+}
+
+header {
+    background: linear-gradient(to bottom left, #ffbb33 0%, #ec5b5b 100%);
+}
+
+i {
+    font-size: 30;
+}
+
+li:hover {
+    background-color: silver;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.aside {
+    font-family: 'Shrikhand';
+    width : 250px;
+    border: 2px solid;
+    height:1000px;
+    background-color:blanchedalmond;
+    float: right;
+    font-size: 13pt;
+    position: relative;
+    list-style-position:outside;
+    overflow-y: scroll;
+    z-index: -1;
+}
+
+.footer {
+    width : 100%;
+    height :20%;
+    background-color: silver;
+    text-align:center;
+    font-size: 20pt;
+    color: white;
+    position: relative;
+}
+
+#img2 {
+    width: 450px;
+    height: 600;
+    position: relative;
+    left:0px;
+    top:0;
+    z-index: -1;
+}
+
+#theMostPopularReasonslist {
+    background-color: bisque;
+    border: 2px dashed black;
+    font-size: 24pt;
+    width : 33%;
+    height: 600;
+    margin-left: 50;
+    padding-left: 20;
+    float: left;
+    overflow: hidden;
+}
+
+.icon {
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+    margin-right:300px;
+    margin-top: 100px;
+    font-size: 60px;
+}
+
+#p1 {
+    width : 73%;
+    height : auto;
+    margin-left: 50px;
+    font-size: 24pt;
+    text-justify: auto;
+    text-align: justify;
+}
+
+.nav {
+    float: left;
+}
+
+.nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: #111;
+    width: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+    #nyhavn, #two-img {
+    display: none;
+    }
+}
+
+#nyhavn {
+    width:100%;
+    height:550px;
+    background-size:cover; 
+    background-repeat: no-repeat;
+    background-image: url(../images/denmark.jpg);
+    transition: color 1s ease-in-out, box-shadow .5s ease-in-out;
+    clip-path: none;
+}
+
+#nyhavn:hover {
+    box-shadow: inset 0px -180px 0 0 rgba(0, 0, 0, 0.8);
+    opacity: 0.9;
+}
+#nyhavn:hover::after {
+    content: 'Nyhavn is a 17th-century waterfront, canal and entertainment district in Copenhagen.';
+    position: relative;
+    top: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 30pt;
+    font-family:Shrikhand;
+    color:white;
+    transition: all .4s; 
+}
+
+#two-img { 
+    position: relative;
+    margin-left: 20px;
+}
+
+#two-img::before {
+    content: '';
+    position: absolute;
+    background: url('../images/img3.jpg');
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 0px;
+    transition: all .3s;
+}
+
+#two-img:hover::before {
+    height: 100%;   
+} 
