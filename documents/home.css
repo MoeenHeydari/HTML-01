@@ -1,0 +1,284 @@
+body {
+    margin : 0;
+    display: flex;
+    flex-direction: column;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.w1 {
+    animation: w1anim 10s;
+}
+
+.w2 {
+    animation: w2anim 10s;
+}
+
+.w3 {
+    animation: w3anim 10s;
+}
+
+@keyframes w1anim {
+    0%{
+    opacity: 0;
+    }
+    20%{
+    opacity: 0.33;
+    }
+    40%{
+    opacity: 0.66;
+    }
+    60%{
+    opacity: 1;
+    }
+    80%{
+    opacity: 1;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
+@keyframes w2anim {
+    0%{
+    opacity: 0;
+    }
+    20%{
+    opacity: 0;
+    }
+    40%{
+    opacity: 0.33;
+    }
+    60%{
+    opacity: 0.66;
+    }
+    80%{
+    opacity: 1;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
+@keyframes w3anim {
+    0%{
+    opacity: 0;
+    }
+    20%{
+    opacity: 0;
+    }
+    40%{
+    opacity: 0;
+    }
+    60%{
+    opacity: 0.33;
+    }
+    80%{
+    opacity: 0.66;
+    }
+    100% {
+    opacity :1;
+    }
+}
+
+i {
+    font-size: 30;
+}
+
+a {
+    text-decoration: none;
+    color : black;
+}
+
+.container {
+    display: flex;
+    margin-top: -300px;
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
+    height: auto ;
+    width: 50px;
+    background-color: rgb(180, 180, 180);
+    float:right;
+    transition: width 1s;
+    transition-delay: 0.5s;
+}
+
+.container:hover {
+    width:130px;
+    background-color: rgb(180, 180, 180);
+    cursor: pointer;
+}
+
+.item {
+    display: flex;
+    width: 50px;
+    height: 100px;
+    align-items: center;
+    justify-items: center;
+}
+
+.left {
+    flex-wrap: wrap;
+    padding-left: 11px;
+    width:50px;
+    height: 100%;
+    background-color: rgb(180, 180, 180);
+    align-items: center;
+    justify-items:center;
+}
+
+.right {
+    height: 100%;
+    width: auto;
+    background-color: rgb(180, 180, 180);
+    align-items:flex-start;
+    margin-left: -10px;
+    font-family: Anton;
+}
+
+i:hover {
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.circle {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 10px rgb(255, 255, 255) solid;
+    position: relative;   
+}
+
+#Accommodation:hover {
+    background-color: #f75b5b;
+}
+
+#Historical-Places:hover {
+    background-color: #da5cfa;
+}
+
+#Zoo:hover {
+    background-color: #35ff82;
+} 
+
+#Restaurants:hover {
+    background-color: #5ccdfa;
+}
+
+#Bars:hover {
+    background-color: #ffb835;
+}
+
+.circle:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 100px;
+    color: #fff;
+    content: attr(id);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    width: auto;
+}
+
+.circle:hover:before {
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 94px;
+    content: "";
+    left: 50%;
+    position: absolute;
+}
+
+.rectangle {
+    width: 400px;
+    height: 100px;
+    margin-top: 50px;
+    background-color: #fff;
+    position: fixed;
+    z-index: -1;
+}
+
+p {
+    background-color: none;
+    text-align: center;
+    text-justify: center;
+    font-size: 50pt;
+    font-family: Trade Winds;
+    color: black;
+}
+@media screen and (max-width: 1000px) {
+    #nyhavn, #two-img {
+    display: none;
+    }
+}
+
+#nyhavn {
+    width:100%;
+    height:550px;
+    background-size:cover; 
+    background-repeat: no-repeat;
+    background-image: url('images/denmark.jpg');
+    transition: color 1s ease-in-out, box-shadow .5s ease-in-out;
+    clip-path: none;
+}
+
+#nyhavn:hover {
+    box-shadow: inset 0px -180px 0 0 rgba(0, 0, 0, 0.8);
+    opacity: 0.9;
+}
+#nyhavn:hover::after {
+    content: 'Nyhavn is a 17th-century waterfront, canal and entertainment district in Copenhagen.';
+    position: relative;
+    top: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-size: 30pt;
+    font-family:Shrikhand;
+    color:white;
+    transition: all .4s; 
+}
+
+#two-img { 
+    position: relative;
+    margin-left: 20px;
+}
+
+#two-img::before {
+    content: '';
+    position: absolute;
+    background: url('images/img3.jpg');
+    background-repeat: no-repeat;
+    width: 33%;
+    height: 0px;
+    transition: all .3s;
+}
+
+#two-img:hover::before {
+    height: 100%;   
+}
