@@ -1,107 +1,228 @@
-
 body {
-    margin : 0;
-    background: linear-gradient(to bottom left, #ffbb33 0%, #ff99cc 100%);
+  margin : 0;
+  background: linear-gradient(to bottom left, #ffbb33 0%, #ff99cc 100%);
 }
 
 input:invalid {
-    animation: shake 300ms;
-    border: 2px solid red;
+  animation: shake 300ms;
+  border: 2px solid red;
 }
 @keyframes shake {
-    25% { transform: translateX(4px); }
-    50% { transform: translateX(-4px);}
-    75% { transform: translateX(4px); }            
+  25% { transform: translateX(4px); }
+  50% { transform: translateX(-4px);}
+  75% { transform: translateX(4px); }            
 }
 
 h1 {
-    width : 100%;
-    height : 50px;
-    font-size: 30pt;
-    text-align: center;
-    text-shadow:2px 2px 10px black;
-    padding-top: 30px;
+  width : 100%;
+  height : 50px;
+  font-size: 30pt;
+  text-align: center;
+  text-shadow:2px 2px 10px black;
+  padding-top: 30px;
 }
 
 header {
-    background: linear-gradient(to bottom left, #ffbb33 0%, #ec5b5b 100%);
-    text-align:center
-}
-
-i {
-    font-size: 30;
+  background: linear-gradient(to bottom left, #ffbb33 0%, #ec5b5b 100%);
+  text-align:center
 }
 
 .footer-fixed {
-    width : 100%;
-    height :20%;
-    background-color: silver;
-    text-align:center;
-    font-size: 20pt;
-    color: white;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-}
-
-.icon {
-    text-align: center;
-    text-shadow: 1px 1px 2px black;
-    margin-right:300px;
-    margin-top: 100px;
-    font-size: 60px;
+  width : 100%;
+  height :20%;
+  background-color: silver;
+  text-align:center;
+  font-size: 20pt;
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
 input:hover {
-    background-color: silver;   
+  background-color: silver;   
 }
 
 input:focus {
-    background-color: rgb(220, 255, 60);
+  background-color: rgb(220, 255, 60);
 }
 
 a[target] {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 input {
-    text-align: center;
-    block-size: 40px;
-    border-radius: 15px;
-    font-weight: bolder;
+  text-align: center;
+  block-size: 40px;
+  border-radius: 15px;
+  font-weight: bolder;
 }
 
 input[type=text], textarea {
-    width: 60%;
-    padding: 12px;
-    border: 1px solid rgb(204, 204, 204);
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: both;
+  width: 60%;
+  padding: 12px;
+  border: 1px solid rgb(204, 204, 204);
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: both;
 }
 
 input[type=submit] {
-    background-color: rgb(0, 170, 10);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
+  background-color: rgb(0, 170, 10);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
 }
 
 input[type=submit]:hover {
-    background-color: rgb(69, 160, 73);
+  background-color: rgb(69, 160, 73);
 }
 
 .contact {
-    border-radius: 5px;    
-    padding: 10px;
-    float: left;
-    width: 30%;
-    margin-top: 6px;
-    margin-left: 3%;
-    padding: 20px;
+  border-radius: 5px;    
+  padding: 10px;
+  float: left;
+  width: 30%;
+  margin-top: 6px;
+  margin-left: 3%;
+  padding: 20px;
 }
 
 input:invalid {
-    border: 2px solid red;
+  border: 2px solid red;
+}
+
+.social-btns .btn,
+.social-btns .btn:before {
+  transition: all 0.35s;
+  transition-timing-function: cubic-bezier(0.3, -0.1, 0.4, 1.6); 	/*(x1,y1),(x2,y2)  x1 and x2 must be a number from 0 to 1*/
+}
+
+.social-btns .btn:before { /*jabejayi avalie cover haye rangi*/
+  top: 90%;
+  left: -110%;
+}
+
+.social-btns .btn .fa {
+    
+    transform: scale(0.8); /*bozorg shodan dar hengame hover*/
+}
+
+.social-btns .btn.facebook:before {       /*fasele ra ba noghte neshan midahad*/
+  background-color: #3b5998;
+}
+
+.social-btns .btn.facebook .fa {
+  color: #3b5998;
+}
+
+.social-btns .btn.youtube:before {
+  background-color: #c4302b;
+}
+
+.social-btns .btn.youtube .fa {
+  color: #c4302b;
+}
+
+.social-btns .btn.twitter:before {
+  background-color: #00aff0;
+}
+
+.social-btns .btn.twitter .fa {
+  color: #00aff0;
+}
+
+.social-btns .btn.btn.whatsapp:before {
+  background-color:	#25D366;
+}
+
+.social-btns .btn.whatsapp .fa {
+  color: 	#25D366;
+}
+
+.social-btns .btn.telegram:before {
+  background-color: #229ED9;
+}
+
+.social-btns .btn.telegram .fa {
+  color: #229ED9;
+}
+
+.social-btns .btn.instagram:before {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.social-btns .btn.instagram .fa {
+  color: #d6249f;
+}
+
+.social-btns .btn.linkedin:before {
+  background-color: #0e76a8;
+}
+
+.social-btns .btn.linkedin .fa {
+  color: #0e76a8;
+}
+
+.social-btns .btn.pinterest:before {
+  background-color: #cc0000;
+}
+
+.social-btns .btn.pinterest .fa {
+  color: #cc0000;
+}
+
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.social-btns {
+  height: 90px;
+  margin: 20px auto;
+  font-size: 0;
+  text-align: center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.social-btns .btn {
+  display: inline-block;
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 10px 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.1);
+  opacity: 0.99;
+}
+
+.social-btns .btn:before {
+  content: "";
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.social-btns .btn .fa {
+  font-size: 38px;
+  margin-top: 27%;
 }
