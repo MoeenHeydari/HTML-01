@@ -32,7 +32,7 @@ header {
 }
 
 #img01 {
-    animation: pulse 1500ms infinite;
+    animation: pulse 1000ms infinite;
 }
 
     @keyframes pulse {

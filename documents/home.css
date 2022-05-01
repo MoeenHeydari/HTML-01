@@ -105,14 +105,15 @@ a {
 }
 
 .container {
+    position: absolute;
+    top: 100px;
+    right: 0;
     display: flex;
-    margin-top: -300px;
     overflow: hidden;
     border-radius: 10px 0 0 10px;
     height: auto ;
     width: 50px;
     background-color: rgb(180, 180, 180);
-    float:right;
     transition: width 1s;
     transition-delay: 0.5s;
 }
@@ -147,7 +148,7 @@ a {
     background-color: rgb(180, 180, 180);
     align-items:flex-start;
     margin-left: -10px;
-    font-family: Anton;
+    font-family: Gluten;
 }
 
 i:hover {
@@ -162,7 +163,7 @@ i:hover {
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
     float: left;
-    margin-top: 50px;
+    margin-top: -50px;
     align-items: center;
     justify-content: center;
     border: 10px rgb(255, 255, 255) solid;
@@ -190,7 +191,6 @@ i:hover {
 }
 
 .circle:hover:after{
-    background: #333;
     background: rgba(0,0,0,.8);
     border-radius: 5px;
     bottom: 100px;
@@ -215,9 +215,9 @@ i:hover {
 .rectangle {
     width: 400px;
     height: 100px;
-    margin-top: 50px;
+    margin: 0 auto;
+    margin-top: -50px;
     background-color: #fff;
-    position: fixed;
     z-index: -1;
 }
 
@@ -228,57 +228,84 @@ p {
     font-size: 50pt;
     font-family: Trade Winds;
     color: black;
+    margin-top: -50px;
 }
-@media screen and (max-width: 1000px) {
-    #nyhavn, #two-img {
+
+.Scriptcontent{
+    max-width: 640px;
+    margin: 30 auto;
+}
+
+input {
     display: none;
-    }
 }
 
-#nyhavn {
-    width:100%;
-    height:550px;
-    background-size:cover; 
-    background-repeat: no-repeat;
-    background-image: url('images/denmark.jpg');
-    transition: color 1s ease-in-out, box-shadow .5s ease-in-out;
-    clip-path: none;
+#slider {
+    display: inline-block;
+    text-align: center;
+    transition: all 0.5s ease-out;
 }
 
-#nyhavn:hover {
-    box-shadow: inset 0px -180px 0 0 rgba(0, 0, 0, 0.8);
-    opacity: 0.9;
-}
-#nyhavn:hover::after {
-    content: 'Nyhavn is a 17th-century waterfront, canal and entertainment district in Copenhagen.';
-    position: relative;
-    top: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 50px;
-    padding-left: 50px;
-    font-size: 30pt;
-    font-family:Shrikhand;
-    color:white;
-    transition: all .4s; 
+#slide1:checked ~ #slides .inner {
+    margin-left:0;
 }
 
-#two-img { 
-    position: relative;
-    margin-left: 20px;
+#slide2:checked ~ #slides .inner {
+    margin-left:-100%;
 }
 
-#two-img::before {
-    content: '';
+#slide3:checked ~ #slides .inner {
+    margin-left:-200%;
+}
+
+#slide4:checked ~ #slides .inner {
+    margin-left:-300%;
+}
+
+#slide5:checked ~ #slides .inner {
+    margin-left:-400%;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slider img {
+    width: 100%;
+    height: auto;
+}
+
+#slides .inner {
+    width: 500%;
+}
+
+#slides article {
+    width: 20%;
+    float: left;
+}
+
+#active label {
+    border-radius: 50%;
+    display: inline-block;
+    width: auto;
+    height: auto;
     position: absolute;
-    background: url('images/img3.jpg');
-    background-repeat: no-repeat;
-    width: 33%;
-    height: 0px;
-    transition: all .3s;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
 }
 
-#two-img:hover::before {
-    height: 100%;   
+#slides {
+    display: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #666;
+    padding: 15px;
+    background: rgb(252, 255, 244);
+}
+
+#slides .inner {
+    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
