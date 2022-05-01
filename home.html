@@ -1,8 +1,9 @@
 <html>
     <head>
         <script src="https://kit.fontawesome.com/d854dcc465.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trade Winds|Anton|Shrikhand|Gluten&effect=fire|shadow-multiple|emboss"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trade Winds|Anton|Gluten&effect=shadow-multiple"/>
         <link type="text/css" rel="stylesheet" href="documents/home.css"/>
+        <script type="text/javascript" src="documents/home.js"></script>
         <title>Home</title>
     </head>
 
@@ -14,25 +15,70 @@
         </p>
         
         <main style="width: 100%; justify-content: center; display: flex;">
-            <div class="circle" id="Accommodation" onMouseOver="document.body.style.background='#f75b5b'">
-                <i class="fas fa-hotel"> </i>
+            <div id="active">
+                <div class="circle" id="Accommodation" onMouseOver="document.body.style.background='#f75b5b'">
+                    <i class="fas fa-hotel">
+                        <label for="slide1"></label>
+                    </i>
+                </div>
+                <div class="circle" id="Historical-Places" onMouseOver="document.body.style.background='#da5cfa'">
+                    <i class="fas fa-landmark">
+                        <label for="slide2"></label>
+                    </i>
+                </div>
+                <div class="circle" id="Zoo" onMouseOver="document.body.style.background='#35ff82'">
+                    <i class="fas fa-paw">
+                        <label for="slide3"></label>
+                    </i>
+                </div>
+                <div class="circle" id="Restaurants" onMouseOver="document.body.style.background='#5ccdfa'">
+                    <i class="fas fa-hotdog">
+                        <label for="slide4"></label>
+                    </i>
+                </div>
+                <div class="circle" id="Bars" onMouseOver="document.body.style.background='#ffb835'">
+                    <i class="fas fa-cocktail">
+                        <label for="slide5"></label>
+                    </i>
+                </div>
+                <div class="rectangle">
             </div>
-            <div class="circle" id="Historical-Places" onMouseOver="document.body.style.background='#da5cfa'">
-                <i class="fas fa-landmark"> </i>
-            </div>
-            <div class="circle" id="Zoo" onMouseOver="document.body.style.background='#35ff82'">
-                <i class="fas fa-paw"> </i>
-            </div>
-            <div class="circle" id="Restaurants" onMouseOver="document.body.style.background='#5ccdfa'">
-                <i class="fas fa-hotdog"> </i>
-            </div>
-            <div class="circle" id="Bars" onMouseOver="document.body.style.background='#ffb835'">
-                <i class="fas fa-cocktail"> </i>
-            </div>
-            <div class="rectangle">
-            </div>
+        </div>
         </main>
+       
+        <div class="Scriptcontent">
+            <section id="slider">
+                <input type="radio" name="slider" id="slide1" onclick="showSlides()"/>
+                <input type="radio" name="slider" id="slide2" onclick="showSlides()"/>
+                <input type="radio" name="slider" id="slide3" onclick="showSlides()"/>
+                <input type="radio" name="slider" id="slide4" onclick="showSlides()"/>
+                <input type="radio" name="slider" id="slide5" onclick="showSlides()"/>
 
+                <div id="slides">
+                    <div id="overflow">
+                        <div class="inner">
+                            <article>
+                                <img src="images/home-slide-1.jpg" />
+                            </article>
+                            <article>
+                                <img src="images/home-slide-2.jpg" />
+                            </article>
+                            <article>
+                                <img src="images/home-slide-3.jpg" />
+                            </article>
+                            <article> 
+                                <img src="images/home-slide-4.jpg" />
+                            </article>
+                            <article>
+                                <img src="images/home-slide-5.jpg" />
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+        
         <aside>
             <div class='container'>
 
@@ -64,6 +110,5 @@
             
             </div>
         </aside>
-
     </body>
 </html>
